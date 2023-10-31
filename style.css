@@ -11,7 +11,7 @@ body {
   width: 30%;
   margin: 50px auto 0px;
   color: white;
-  background: #5F9EA0;
+  background: #004080;
   text-align: center;
   border: 1px solid #B0C4DE;
   border-bottom: none;
@@ -46,7 +46,7 @@ form, .content {
   padding: 10px;
   font-size: 15px;
   color: white;
-  background: #5F9EA0;
+  background: #004080;
   border: none;
   border-radius: 5px;
 }
@@ -61,9 +61,9 @@ form, .content {
   text-align: left;
 }
 .success {
-  color: #3c763d; 
+  color: #004080; 
   background: #dff0d8; 
-  border: 1px solid #3c763d;
+  border: 1px solid #004080;
   margin-bottom: 20px;
 }
 
@@ -115,7 +115,7 @@ body {
 .black-button {
   width: 250px;
   height: 200px;
-  background-color: rgb(41, 41, 41);
+  background-color:#0059b3;
   color: white;
   border: none;
   border-radius: 5px;
@@ -129,7 +129,7 @@ body {
 .black-button-wide-1 {
   width: 520px;
   height: 200px;
-  background-color: rgb(38, 81, 223);
+  background-color: #004080;
   color: white;
   border: none;
   border-radius: 5px;
@@ -175,4 +175,12 @@ body {
 
 .bottom-spacer-idk {
   height: 300px; 
+}
+
+#mySidebar {
+  background-color: #2e2e2e; /* Dark grey color */
+}
+
+.navbar-custom {
+  background-color: #004080;
 }
