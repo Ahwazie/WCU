@@ -1,193 +1,508 @@
+/* bwh is login.php */
+
+.login-container {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f4c75, #3282b8); /* Navy blue gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    position: relative; /* Needed for absolute positioning of the logo */
+}
+
+.logo-container {
+    position: absolute;
+    top: 100px; /* Adjust as needed to position the logo */
+    text-align: center;
+    width: 100%;
+    z-index: 2; /* Ensures logo is above everything else */
+}
+
+.logo-container .logo {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+}
+
+.login-container .form-header {
+    text-align: center;
+    margin-bottom: 100px;
+    color: black;
+}
+
+.login-container .login-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-container form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Adjust width as needed */
+    position: relative; /* To stack on top of the logo */
+    z-index: 1; /* Ensures form is above the logo */
+}
+
+.login-container .input-group {
+    margin-bottom: 20px;
+}
+
+.login-container .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-container .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container .btn {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to right, #28a745, #218838); /* Green gradient */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-container .btn:hover {
+    background-image: linear-gradient(to right, #218838, #1e7e34); /* Darker green gradient */
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container a {
+    color: #0f4c75; /* Navy blue color */
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* below is register */
+
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #0f4c75, #3282b8); /* Navy blue gradient */
+}
+
+.register-page .form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.register-page .form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.register-page .registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-page .input-group {
+    margin-bottom: 15px;
+}
+
+.register-page .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.register-page .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.register-page .btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-page .btn:hover {
+    background-color: #004494;
+}
+
+.register-page .login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-page .login-link a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.register-page .login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/*below is dashboard */
+
 * {
-  margin: 0px;
-  padding: 0px;
-}
-body {
-  font-size: 120%;
-  background: #F8F8FF;
-}
-
-.header {
-  width: 30%;
-  margin: 50px auto 0px;
-  color: white;
-  background: #004080;
-  text-align: center;
-  border: 1px solid #B0C4DE;
-  border-bottom: none;
-  border-radius: 10px 10px 0px 0px;
-  padding: 20px;
-}
-form, .content {
-  width: 30%;
-  margin: 0px auto;
-  padding: 20px;
-  border: 1px solid #B0C4DE;
-  background: white;
-  border-radius: 0px 0px 10px 10px;
-}
-.input-group {
-  margin: 10px 0px 10px 0px;
-}
-.input-group label {
-  display: block;
-  text-align: left;
-  margin: 3px;
-}
-.input-group input {
-  height: 30px;
-  width: 93%;
-  padding: 5px 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid gray;
-}
-.btn {
-  padding: 10px;
-  font-size: 15px;
-  color: white;
-  background: #004080;
-  border: none;
-  border-radius: 5px;
-}
-.error {
-  width: 92%; 
-  margin: 0px auto; 
-  padding: 10px; 
-  border: 1px solid #a94442; 
-  color: #a94442; 
-  background: #f2dede; 
-  border-radius: 5px; 
-  text-align: left;
-}
-.success {
-  color: #004080; 
-  background: #dff0d8; 
-  border: 1px solid #004080;
-  margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #c6c2c2;  /* Adjust as needed */
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Light background for contrast */
 }
 
-.dashboard-container {
-  display: flex;
-  flex-direction: row; /* Set to row for horizontal alignment */
-  align-items: center;
-  justify-content: center; /* Centers items horizontally */
-  gap: 15px;  /* Space between buttons, increased for bigger buttons */
-  padding: 75px 0 0 0;
-  text-align: left;
-    padding-left: 200px;
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255); /* Light grey for the body */
+    font-family: Arial, sans-serif;
 }
 
-.dashboard-container-2 {
-  display: flex;
-  flex-direction: row; /* Set to row for horizontal alignment */
-  align-items: center;
-  justify-content: center; /* Centers items horizontally */
-  gap: 15px;  /* Space between buttons, increased for bigger buttons */
-  padding: 15px 0 0 0;
-  text-align: left;
-    padding-left: 200px;
+.menu a {
+    text-decoration: none;
+    color: inherit; /* Keeps the text color consistent with the li element */
+    display: flex;
+    align-items: center;
 }
 
-.dashboard-container-3 {
-  display: flex;
-  flex-direction: row; /* Set to row for horizontal alignment */
-  align-items: center;
-  justify-content: center; /* Centers items horizontally */
-  gap: 15px;  /* Space between buttons, increased for bigger buttons */
-  padding: 15px 0px 0px 0;
-  text-align: left;
-    padding-left: 200px;
+.menu img {
+    margin-right: 10px; /* Adds some space between the icon and the text */
 }
 
-.dashboard-container-4 {
-  display: flex;
-  flex-direction: row; /* Set to row for horizontal alignment */
-  align-items: center;
-  justify-content: center; /* Centers items horizontally */
-  gap: 15px;  /* Space between buttons, increased for bigger buttons */
-  padding: 15px 0px 0px 0;
-  width: px;
-  text-align: left;
-    padding-left: 200px;
+.menu li:hover {
+    background-color: #f0f0f0; /* Change as needed */
+    border-radius: 5px; /* Optional rounded corners */
 }
 
-.black-button {
-  width: 250px;
-  height: 200px;
-  background-color:#0059b3;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;   /* 2x padding for bigger buttons */
-  font-size: 14px;  /* 2x font size */
-  cursor: pointer;
-  transition: 0.3s;  /* Smooth hover effect */
-  white-space: normal;
+
+.sidebar {
+    width: 200px;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(to bottom, #005f73, #0a9396); /* Example gradient */
+    color: white;
+    padding: 20px;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
 }
 
-.black-button-wide-1 {
-  width: 520px;
-  height: 200px;
-  background-color: rgb(223, 226, 63);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;   /* 2x padding for bigger buttons */
-  font-size: 14px;  /* 2x font size */
-  cursor: pointer;
-  transition: 0.3s;  /* Smooth hover effect */
-  white-space: normal;
+.sidebar .logo img {
+    width: 30%; /* Smaller logo */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Center the logo */
 }
 
-.black-button-wide-2 {
-  width: 520px;
-  height: 200px;
-  background-color: rgb(229, 72, 72);
-  color: rgb(0, 0, 0);
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;   /* 2x padding for bigger buttons */
-  font-size: 14px;  /* 2x font size */
-  cursor: pointer;
-  transition: 0.3s;  /* Smooth hover effect */
-  white-space: normal;
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, #fff, transparent);
+    margin-bottom: 20px;
 }
 
-.black-button:hover {
-  background-color: #828080;  /* Slightly lighter shade of black on hover */
+.sidebar .menu {
+    list-style: none;
 }
 
-.black-button-wide-1:hover {
-  background-color: #828080;  /* Slightly lighter shade of black on hover */
+.sidebar .menu li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em; /* Adjust font size */
 }
 
-.black-button-wide-2:hover {
-  background-color: #828080;  /* Slightly lighter shade of black on hover */
+.sidebar .menu li img {
+    margin-right: 10px;
+    width: 20px; /* Adjust as needed */
+    height: auto;
 }
 
-.button-icon {
-  display: block;  /* Make the image a block-level element */
-  margin: 0 auto 10px;  /* Center the image horizontally and add space below it */
-  width: 60px;  /* Example width; adjust as needed */
-  height: 60px;  /* Example height; adjust as needed */
+/* Optional: Add hover effect to menu items */
+.sidebar .menu li:hover {
+    padding-left: 5px;
+    transition: padding-left 0.3s ease;
 }
 
-.bottom-spacer-idk {
-  height: 300px; 
+
+.logout-container {
+    position: absolute;
+    bottom: 20px; /* Position at the bottom of the sidebar */
+    width: 10%; /* Full width of the sidebar */
+    text-align: center; /* Center the button */
 }
 
-#mySidebar {
-  background-color: #2e2e2e; /* Dark grey color */
+.logout-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d32f2f; /* Professional red color */
+    color: white;
+    padding: 10px 37.5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.navbar-custom {
-  background-color: #004080;
+.logout-btn img {
+    margin-right: 5px; /* Space between icon and text */
+    width: 20px; /* Adjust as needed */
+    height: auto;
+}
+
+.logout-btn:hover, .logout-btn:focus {
+    background-color: #b71c1c; /* Darker shade of red on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+------------------------------
+/* ... (existing sidebar styles) */
+
+.main-content {
+    margin-left: 200px; /* Adjust according to the sidebar width */
+    padding-top: 0px; /* Adjust as needed */
+}
+
+.top-bar {
+    background-color: #b9b2b2; /* Grey color for the top bar */
+    color: black; /* Adjust text color as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 210px;
+}
+
+.search-input {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #b9b2b2; /* Make it blend with the bar */
+    color: rgb(53, 52, 52), 146, 146;
+    margin-left: 10px;
+}
+
+.search-input::placeholder {
+    color: #242222; /* Lighter color for placeholder */
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info .btn {
+    padding: 5px 10px;
+    background-color: #444; /* Slightly different shade for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.user-info .btn:hover {
+    background-color: #555;
+}
+
+
+/*Content area */
+
+.content-area {
+    margin-left: 220px; /* Increased space from the sidebar */
+    padding: 20px;
+}
+
+.welcome-message h1 {
+    font-size: 28px; /* Larger, more prominent size */
+    color: #333; /* Professional dark color */
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional font */
+}
+
+.welcome-message p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, #333, transparent);
+    margin-bottom: 40px;
+}
+
+.navigation-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Increased space between buttons */
+}
+
+.nav-btn {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #1c5a8a, #3a7dbd); /* Softer gradient */
+    color: white;
+    width: 235px; /* Fixed width */
+    height: 180px; /* Fixed height */
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    margin-bottom: 20px; /* Space between buttons */
+}
+
+.nav-btn img {
+    width: px; /* Adjust as needed */
+    height: px; /* Adjust as needed */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.nav-btn span {
+    font-size: 16px; /* Adjust as needed */
+    text-align: center;
+    padding: 0 10px; /* To ensure text doesn't overflow */
+}
+
+.nav-btn:hover {
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* fancy big title */
+
+.fancy-title {
+    font-family: 'Arial', sans-serif; /* Consider using a more sophisticated font if available */
+    color: #333; /* Dark grey color */
+    text-align: center;
+    font-size: 2em; /* Adjust the size as needed */
+    margin-top: 50px;
+    margin-left: 200px;
+    position: relative;
+    padding-bottom: 10px;
+    letter-spacing: 1px; /* Adds spacing between characters for a modern look */
+}
+
+.fancy-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 50%; /* Adjust the width of the underline */
+    background-color: #333; /* Same dark grey color as the text */
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.fancy-title:hover::after {
+    width: 70%; /* Underline expands on hover */
+}
+
+/* Adding a subtle text shadow for depth */
+.fancy-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Add a gradient background for a more dynamic look */
+.fancy-title {
+    background-image: linear-gradient(to right, #555, #777, #555);
+    -webkit-background-clip: text;
+    color: transparent; /* Makes the text show the gradient */
+}
+
+
+/* BACK BUTTON */
+
+.go-back-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #ff7f50; /* Orange color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 80px;
+    margin-left: 225px;
+}
+
+.go-back-btn:hover {
+    background-color: #e67e22; /* Slightly darker shade on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+.go-back-btn .back-icon {
+    width: 20px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* CHART */
+
+.chart {
+    margin-left: 230px;
+    margin-top: 30px;
+    width: 80%;
+   
 }

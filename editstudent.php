@@ -43,6 +43,7 @@ $row = $result->fetch_assoc();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Edit Student Data</title>
     <style>
         body {
@@ -101,7 +102,14 @@ $row = $result->fetch_assoc();
 <body>
 
 <h2 style="text-align:center;">Edit Data</h2>
-
+<a href="#" class="go-back-btn" onclick="goBack()">
+        <img src="icons/back.png" alt="Back Icon" class="back-icon">Go Back
+    </a>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
 <form action="editstudent.php" method="post">
     <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
     <label for="inisiatif_strategik">INISIATIF STRATEGIK:</label>

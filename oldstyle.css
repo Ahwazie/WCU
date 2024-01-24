@@ -1,0 +1,306 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 120%;
+  background: #F8F8FF;
+}
+
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #004080;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #004080;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #004080; 
+  background: #dff0d8; 
+  border: 1px solid #004080;
+  margin-bottom: 20px;
+}
+
+/* All website dashboard related below */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #e3e0e0; /* Light grey for the body */
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(to bottom, #005f73, #0a9396); /* Example gradient */
+  color: white;
+  padding: 20px;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+}
+
+.sidebar .logo img {
+  width: 30%; /* Smaller logo */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px; /* Center the logo */
+}
+
+.sidebar hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, #fff, transparent);
+  margin-bottom: 20px;
+}
+
+.sidebar .menu {
+  list-style: none;
+}
+
+.sidebar .menu li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em; /* Adjust font size */
+}
+
+.sidebar .menu li img {
+  margin-right: 10px;
+  width: 20px; /* Adjust as needed */
+  height: auto;
+}
+
+/* Optional: Add hover effect to menu items */
+.sidebar .menu li:hover {
+  padding-left: 5px;
+  transition: padding-left 0.3s ease;
+}
+
+
+.logout-container {
+  position: absolute;
+  bottom: 20px; /* Position at the bottom of the sidebar */
+  width: 10%; /* Full width of the sidebar */
+  text-align: center; /* Center the button */
+}
+
+.logout-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d32f2f; /* Professional red color */
+  color: white;
+  padding: 10px 37.5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.logout-btn img {
+  margin-right: 5px; /* Space between icon and text */
+  width: 20px; /* Adjust as needed */
+  height: auto;
+}
+
+.logout-btn:hover, .logout-btn:focus {
+  background-color: #b71c1c; /* Darker shade of red on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+------------------------------
+/* ... (existing sidebar styles) */
+
+.main-content {
+  margin-left: 200px; /* Adjust according to the sidebar width */
+  padding-top: 0px; /* Adjust as needed */
+}
+
+.top-bar {
+  background-color: #b9b2b2; /* Grey color for the top bar */
+  color: black; /* Adjust text color as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 210px;
+}
+
+.search-input {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #b9b2b2; /* Make it blend with the bar */
+  color: rgb(53, 52, 52), 146, 146;
+  margin-left: 10px;
+}
+
+.search-input::placeholder {
+  color: #242222; /* Lighter color for placeholder */
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info .btn {
+  padding: 5px 10px;
+  background-color: #444; /* Slightly different shade for button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.user-info .btn:hover {
+  background-color: #555;
+}
+
+
+/*Content area */
+
+.content-area {
+  margin-left: 220px; /* Increased space from the sidebar */
+  padding: 20px;
+}
+
+.welcome-message h1 {
+  font-size: 28px; /* Larger, more prominent size */
+  color: #333; /* Professional dark color */
+  margin-bottom: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional font */
+}
+
+.welcome-message p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, #333, transparent);
+  margin-bottom: 40px;
+}
+
+.navigation-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Increased space between buttons */
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #1c5a8a, #3a7dbd); /* Softer gradient */
+  color: white;
+  width: 235px; /* Fixed width */
+  height: 180px; /* Fixed height */
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin-bottom: 20px; /* Space between buttons */
+}
+
+.nav-btn img {
+  width: px; /* Adjust as needed */
+  height: px; /* Adjust as needed */
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+.nav-btn span {
+  font-size: 16px; /* Adjust as needed */
+  text-align: center;
+  padding: 0 10px; /* To ensure text doesn't overflow */
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
